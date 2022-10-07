@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+    
+    <struts>
+    <constant name="struts.devmode" value="true"></constant>
+    <package name="validdemo" extends="struts-default">
+    <action name="">
+    <result>/index.jsp</result>
+    </action>
+    
+    <action name="showform">
+    <result>/itemform.jsp</result>
+    </action>
+    
+    <action name="add-hotel" class="com.training.actions.ItemAction">
+    <result  name="success">/itemshow.jsp</result>
+    <result name="error">/itemform.jsp</result>
+    <result name="input">/itemform.jsp</result>
+    </action>
+    
+  
+    </package>
+    </struts>
